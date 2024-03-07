@@ -29,7 +29,7 @@ public class CalculatorController {
 
     @GetMapping("/sum")
     public double sum(@RequestParam double num1,@RequestParam double num2) {
-        double result = calculatorService.sum(num1, num2);
+       /*  double result = calculatorService.sum(num1, num2);
         Operation operation = new Operation();
         operation.setTime(new Date());
         operation.setResult(result);
@@ -38,7 +38,7 @@ public class CalculatorController {
         operation.setOperand2(num2);
 
         OperationService operationService = new OperationService();
-        operationService.saveOperation(operation);
+        operationService.saveOperation(operation);*/
 
         return calculatorService.sum(num1, num2);
     }

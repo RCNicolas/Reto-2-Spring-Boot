@@ -23,17 +23,17 @@ public class CalculatorApplication {
 		OperationService operationService = context.getBean(OperationService.class);
 
 		Operation operation = new Operation();
-//		double num1 =4;
-//		double num2 = 12;
-//		double result = num1 + num2;
-//		operation.setTime(new Date());
-//		operation.setResult(result);
-//		operation.setOperationType("Suma");
-//		operation.setOperand1(num1);
-//		operation.setOperand2(num2);
-//
-//		operationService.saveOperation(operation);
-//		operationService.deleteOperation(2L);
+		double num1 =4;
+		double num2 = 12;
+		double result = num1 + num2;
+		operation.setTime(new Date());
+		operation.setResult(result);
+		operation.setOperationType("Suma");
+		operation.setOperand1(num1);
+		operation.setOperand2(num2);
+
+		operationService.saveOperation(operation);
+		operationService.deleteOperation(2L);
 	}
 
 }
